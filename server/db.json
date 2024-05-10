@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "avatar": "8hJ4kU7EtjB8Y203",
+      "last_name": "Doe",
+      "first_name": "John",
+      "middle_name": "Middle",
+      "email": "2bJpG@example.com",
+      "about_self": "Text akdl;akdl;ak l;akd; lks d;laks ;l"
+    },
+    {
+      "id": "6",
+      "created_at": "2024-05-08T16:03:55.887Z",
+      "avatar": "VJi5njDrqdQxpDvx",
+      "last_name": "B",
+      "first_name": "N",
+      "middle_name": "asd",
+      "email": "asd@asd",
+      "about_self": "something"
+    },
+    {
+      "id": "7",
+      "created_at": "2024-05-08T17:30:01.667Z",
+      "avatar": "FmTkbYVy0FSi4QBl",
+      "last_name": "asdas",
+      "first_name": "asdasd",
+      "middle_name": "asdasd",
+      "email": "asdasd@asdasd",
+      "about_self": "asdasd"
+    },
+    {
+      "id": "10",
+      "created_at": "2024-05-08T18:48:02.768Z",
+      "avatar": "Z6kTdbjaPPcu1PYk",
+      "last_name": "gif",
+      "first_name": "gif",
+      "middle_name": "gif",
+      "email": "gif@gif",
+      "about_self": "gif"
+    },
+    {
+      "id": "11",
+      "created_at": "2024-05-08T19:34:46.674Z",
+      "avatar": "PzkGtVuwj1MdbmYq",
+      "last_name": "asd",
+      "first_name": "asdasdas",
+      "middle_name": "asdas",
+      "email": "asda@addasd",
+      "about_self": "asdas"
+    }
+  ]
+}
