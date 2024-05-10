@@ -46,7 +46,7 @@ export default function Form({
 
     return (
         <Formik
-            validationSchema={() => userSchema(users, unique)}
+            validationSchema={() => userSchema(user, users, unique)}
             validateOnChange={false}
             validateOnBlur={true}
             initialValues={{

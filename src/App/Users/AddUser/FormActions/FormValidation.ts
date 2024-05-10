@@ -4,7 +4,7 @@ import { checkEmail } from './CheckEmail';
 // types
 import { IUser } from '../../Users';
 
-export const userSchema = (users: IUser[], unique: boolean) =>
+export const userSchema = (user: IUser, users: IUser[], unique: boolean) =>
     yup.object().shape({
         avatar: yup.string().required('Avatar is required'),
 
@@ -16,8 +16,8 @@ export const userSchema = (users: IUser[], unique: boolean) =>
             .string()
             .email('Example: "asd@asd.com"')
             .required('Email is required')
-            .test('unique', 'Email already exists', function (email: any) {
-                return unique ? checkEmail(email, users) : true;
+            .test('unique', 'Email already exists', function (email: string) {
+                return checkEmail(user, email, users, unique);
             }),
 
         about_self: yup.string(),

@@ -7,7 +7,7 @@ import Button from '../../UI/UserComponents/Button';
 import Delete from './Options/Delete/Delete';
 import SelectAll from './Options/SelectAll';
 
-export default function Select() {
+export default function Select({ hasUsers }: { hasUsers: boolean }) {
     // hooks
     const { showSelect, selectedUsers } = useAppSelector(
         (state) => state.users
@@ -17,7 +17,7 @@ export default function Select() {
 
     // dispatch
     const handleToggle = (): void => {
-        dispatch(toggleShowSelect());
+        if (hasUsers) dispatch(toggleShowSelect(!showSelect));
     };
 
     return (

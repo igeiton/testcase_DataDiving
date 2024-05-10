@@ -38,7 +38,7 @@ export default function Info({
             dispatch(selectAll([]));
 
             if (showSelect) {
-                dispatch(toggleShowSelect());
+                dispatch(toggleShowSelect(false));
             }
 
             navigate(`${id}`);

@@ -30,8 +30,8 @@ const usersSlice = createSlice({
             }
         },
 
-        toggleShowSelect(state) {
-            state.showSelect = !state.showSelect;
+        toggleShowSelect(state, action) {
+            state.showSelect = action.payload;
         },
 
         selectAll(state, action) {

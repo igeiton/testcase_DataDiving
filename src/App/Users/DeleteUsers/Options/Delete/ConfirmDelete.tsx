@@ -4,7 +4,10 @@ import { useAppDispatch, useAppSelector } from '../../../../../Store/store';
 // api
 import { useDeleteUserMutation } from '../../../../../Store/Api/usersApi';
 // slices
-import { selectAll } from '../../../../../Store/Slices/usersSlice';
+import {
+    selectAll,
+    toggleShowSelect,
+} from '../../../../../Store/Slices/usersSlice';
 // styles
 import { colors } from '../../../../UI/Styles/Styles';
 // components
@@ -29,7 +32,9 @@ export default function ConfirmDelete({ closeModel }: IPros) {
         for (let i = 0; i < selectedUsers.length; i++) {
             deleteUser(selectedUsers[i].id);
         }
+
         dispatch(selectAll([]));
+        dispatch(toggleShowSelect(false));
 
         navigate('/');
     };

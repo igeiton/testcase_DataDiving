@@ -25,7 +25,9 @@ export default function AddButton() {
     const handleCreateUser = (values: IUser): void => {
         if (isUsersSuccess) {
             const newUser = {
-                id: (Number(users[users.length - 1].id) + 1).toString(),
+                id: users.length
+                    ? (Number(users[users.length - 1].id) + 1).toString()
+                    : '1',
                 created_at: new Date(),
                 avatar: values.avatar,
                 last_name: values.last_name,
